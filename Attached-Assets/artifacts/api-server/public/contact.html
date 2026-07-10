@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>تواصل معي | Portfolio</title>
+  <link rel="stylesheet" href="/css/main.css" />
+</head>
+<body>
+  <div class="scroll-progress" id="scroll-progress"></div>
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="/" class="nav-logo"><div class="logo-icon" id="nav-logo-text">م.ح</div></a>
+      <div class="nav-links" id="nav-links"></div>
+      <div class="nav-right">
+        <button class="lang-toggle" id="lang-toggle">EN</button>
+        <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+  <div class="mobile-drawer-overlay" id="drawer-overlay"></div>
+  <div class="mobile-drawer" id="mobile-drawer">
+    <div class="mobile-drawer-header">
+      <div class="nav-logo"><div class="logo-icon" id="drawer-logo">م.ح</div></div>
+      <button class="mobile-drawer-close" id="drawer-close">✕</button>
+    </div>
+    <nav class="mobile-drawer-nav" id="mobile-drawer-nav"></nav>
+    <div class="mobile-drawer-footer"><button class="lang-toggle" id="drawer-lang-toggle">EN</button></div>
+  </div>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="section-eyebrow reveal" data-ar="تواصل معي" data-en="Get In Touch">تواصل معي</div>
+      <h1 class="section-title reveal" style="font-size:clamp(2.8rem,7vw,4.5rem)" data-ar="هل لديك مشروع؟" data-en="Have a Project?">هل لديك مشروع؟</h1>
+      <p class="section-sub reveal reveal-delay-1" id="contact-intro">
+        هل لديك مشروع في ذهنك؟ تواصل معي وسنبني شيئاً استثنائياً معاً.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <div>
+          <div class="contact-info-list" id="contact-info-items">
+            <div class="loading"><div class="spinner"></div></div>
+          </div>
+          <div class="contact-social" id="contact-social"></div>
+        </div>
+
+        <div class="contact-form reveal">
+          <h3 style="margin-bottom:24px;font-size:1.15rem;font-weight:800;" data-ar="أرسل لي رسالة" data-en="Send Me a Message">أرسل لي رسالة</h3>
+          <form id="contact-form">
+            <div class="form-group">
+              <label class="form-label" data-ar="الاسم الكامل *" data-en="Full Name *">الاسم الكامل *</label>
+              <input type="text" class="form-input" id="contact-name" required
+                data-ar-placeholder="أدخل اسمك الكامل" data-en-placeholder="Enter your full name"
+                placeholder="أدخل اسمك الكامل" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" data-ar="البريد الإلكتروني *" data-en="Email Address *">البريد الإلكتروني *</label>
+              <input type="email" class="form-input" id="contact-email" required
+                data-ar-placeholder="example@email.com" data-en-placeholder="example@email.com"
+                placeholder="example@email.com" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" data-ar="رقم الهاتف (اختياري)" data-en="Phone (optional)">رقم الهاتف (اختياري)</label>
+              <input type="tel" class="form-input" id="contact-phone"
+                data-ar-placeholder="+966 5X XXX XXXX" data-en-placeholder="+1 (555) 000-0000"
+                placeholder="+966 5X XXX XXXX" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" data-ar="رسالتك *" data-en="Your Message *">رسالتك *</label>
+              <textarea class="form-textarea" id="contact-message" required rows="5"
+                data-ar-placeholder="أخبرني عن مشروعك..." data-en-placeholder="Tell me about your project..."
+                placeholder="أخبرني عن مشروعك..."></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full" id="contact-submit">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              <span data-ar="إرسال الرسالة" data-en="Send Message">إرسال الرسالة</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom" style="border:none;padding:0;">
+        <p id="footer-copy"></p>
+        <div class="footer-social" id="footer-social"></div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast-container"></div>
+  <script src="/js/api.js"></script>
+  <script src="/js/main.js"></script>
+  <script src="/js/contact.js"></script>
+</body>
+</html>
