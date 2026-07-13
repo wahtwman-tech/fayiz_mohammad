@@ -4,6 +4,9 @@
     "builder": "NIXPACKS",
     "nixpacksPlan": {
       "phases": {
+        "setup": {
+          "nixpkgs": ["pkgs.nodejs_20", "pkgs.npm"]
+        },
         "install": {
           "commands": ["npm install --legacy-peer-deps"]
         },
