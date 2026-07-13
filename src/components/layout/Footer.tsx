@@ -32,8 +32,8 @@ export default function Footer() {
           <div className="space-y-4">
             <h3 className="font-bold text-lg">تواصل معنا</h3>
             <ul className="space-y-3 text-sm text-slate-400">
-              <li className="flex items-center gap-2"><MapPin className="h-4 w-4 text-emerald-500" /><span>الرياض، المملكة العربية السعودية</span></li>
-              <li className="flex items-center gap-2"><Phone className="h-4 w-4 text-emerald-500" /><span dir="ltr">+966 11 XXX XXXX</span></li>
+              <li className="flex items-center gap-2"><MapPin className="h-4 w-4 text-emerald-500" /><span>عمان، المملكة الأردنية الهاشمية</span></li>
+              <li className="flex items-center gap-2"><Phone className="h-4 w-4 text-emerald-500" /><span dir="ltr">+962 6 XXX XXXX</span></li>
               <li className="flex items-center gap-2"><Mail className="h-4 w-4 text-emerald-500" /><span>info@susdevfund.org</span></li>
             </ul>
             <div className="flex gap-3 pt-2">
@@ -47,7 +47,7 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-slate-400 text-sm">© {new Date().getFullYear()} صندوق الاستدامة التنموي. جميع الحقوق محفوظة.</p>
             <div className="flex items-center gap-4 text-sm text-slate-400">
-              <span>سجل تجاري: 1010XXXXXX</span><span>|</span><span>الرقم الضريبي: 3XXXXXX</span>
+              <span>سجل تجاري: 20XXX</span><span>|</span><span>الرقم الضريبي: 11XXXXXX</span>
             </div>
           </div>
         </div>

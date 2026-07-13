@@ -3,14 +3,14 @@ import { TeamMember, Testimonial, Stat } from "@/types";
 export const teamMembers: TeamMember[] = [
   {
     id: 1,
-    name: "المملكة العربية السعودية",
+    name: "الأردن",
     role: "الرئيس التنفيذي",
     bio: "خبرة تتجاوز 25 عاماً في قطاع الاستثمار التنموي والتمويل المستدام.",
     imageUrl: "https://api.dicebear.com/7.x/personas/svg?seed=ceo",
   },
   {
     id: 2,
-    name: "الإمارات العربية المتحدة",
+    name: "فاطمة أحمد",
     role: "مديرة الاستثمار",
     bio: "متخصصة في التحليل المالي وإدارة محافظ الاستثمار الاجتماعي.",
     imageUrl: "https://api.dicebear.com/7.x/personas/svg?seed=investment",
@@ -71,9 +71,9 @@ export const testimonials: Testimonial[] = [
 
 export const stats: Stat[] = [
   { value: "+150", label: "مشروع تنموي" },
-  { value: "+500 مليون", label: "ريال مستثمر" },
+  { value: "+50 مليون", label: "دينار مستثمر" },
   { value: "+50,000", label: "مستفيد مباشر" },
-  { value: "+15", label: "دولة عربية" },
+  { value: "+10", label: "دولة عربية" },
 ];
 
 export const impactAreas = [
